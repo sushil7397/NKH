@@ -1,0 +1,6 @@
+/admin/*   /index.html   200
+/cakes/*   /index.html   200
+/cake/*    /index.html   200
+/about     /index.html   200
+/contact   /index.html   200
+/*         /index.html   200

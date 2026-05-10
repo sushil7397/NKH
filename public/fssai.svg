@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 40" role="img" aria-labelledby="title desc">
+  <title id="title">FSSAI</title>
+  <desc id="desc">FSSAI wordmark</desc>
+  <g fill="#111111">
+    <text
+      x="2"
+      y="29"
+      font-family="'Times New Roman', Georgia, serif"
+      font-size="28"
+      font-style="italic"
+      font-weight="700"
+      letter-spacing="-1"
+    >
+      fssai
+    </text>
+  </g>
+  <path
+    d="M3 31 C18 31, 28 29, 39 26 C49 23, 63 22, 80 22 C97 22, 111 20, 124 14"
+    fill="none"
+    stroke="#111111"
+    stroke-width="2.2"
+    stroke-linecap="round"
+  />
+</svg>
