@@ -5,7 +5,7 @@ const DataContext = createContext(null)
 // Bump the version suffix whenever the seed catalog changes shape so that
 // returning visitors with stale localStorage data automatically pick up the
 // new menu instead of the old one.
-const STORAGE_VERSION = 'v14'
+const STORAGE_VERSION = 'v15'
 const KEYS = {
   cakes: `nkh_cakes_${STORAGE_VERSION}`,
   reviews: `nkh_reviews_${STORAGE_VERSION}`,

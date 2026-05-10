@@ -6,6 +6,7 @@ import CakeCard from '../components/CakeCard.jsx'
 import CakePlaceholder from '../components/CakePlaceholder.jsx'
 import TestimonialSlider from '../components/TestimonialSlider.jsx'
 import PageTransition from '../components/PageTransition.jsx'
+import { assetUrl } from '../utils/assets.js'
 
 export default function Home() {
   const { cakes, reviews } = useData()
@@ -38,11 +39,11 @@ export default function Home() {
             transition={{ duration: 0.6 }}
           >
             <span className="chip bg-gold/20 text-gold mb-5">
-              <Heart className="w-3 h-3" /> Sector 12, Noida · Since 2017
+              <Heart className="w-3 h-3" /> Sector 12, Noida · Since 2021
             </span>
             <h1 className="text-4xl md:text-6xl font-display text-cream leading-[1.05] mb-5">
               Baking Memories <br />
-              <span className="text-gold">in Noida since 2017</span>
+              <span className="text-gold">in Noida since 2021</span>
             </h1>
             <p className="text-cream-100/80 text-lg max-w-lg leading-relaxed mb-8">
               Hand-crafted cakes, designer pastries, and customised celebration desserts —
@@ -59,7 +60,7 @@ export default function Home() {
 
             <div className="grid grid-cols-3 gap-6 mt-12 max-w-md">
               {[
-                { v: '8+', l: 'Years' },
+                { v: '5+', l: 'Years' },
                 { v: '700+', l: 'Cakes Baked' },
                 { v: '4.5★', l: 'Avg. Rating' },
               ].map((s) => (
@@ -84,7 +85,7 @@ export default function Home() {
               className="relative w-full h-full flex items-center justify-center"
             >
               <img
-                src="/logo.png"
+                src={assetUrl('logo.png')}
                 alt="Noida's Cake House logo"
                 className="w-[80%] h-[80%] object-contain drop-shadow-2xl"
               />

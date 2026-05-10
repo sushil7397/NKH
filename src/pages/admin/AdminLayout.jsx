@@ -13,6 +13,7 @@ import {
 } from 'lucide-react'
 import { useAuth } from '../../context/AuthContext.jsx'
 import { useData } from '../../context/DataContext.jsx'
+import { assetUrl } from '../../utils/assets.js'
 
 const links = [
   { to: '/admin', label: 'Dashboard', Icon: LayoutDashboard, end: true },
@@ -48,7 +49,7 @@ export default function AdminLayout() {
       >
         <div className="h-16 flex items-center justify-between px-5 border-b border-cream/10">
           <Link to="/admin" className="flex items-center gap-2">
-            <img src="/logo.png" alt="" className="w-9 h-9 object-contain" />
+            <img src={assetUrl('logo.png')} alt="" className="w-9 h-9 object-contain" />
             <span className="font-display">Cake House</span>
           </Link>
           <button

@@ -4,7 +4,7 @@ import { createContext, useContext, useEffect, useState } from 'react'
 // works out of the box. Swap with Supabase / Firebase Auth in production.
 const DEMO_CREDENTIALS = {
   username: 'admin',
-  password: 'cakehouse@2017',
+  password: 'cakehouse@2021',
 }
 
 const AuthContext = createContext(null)

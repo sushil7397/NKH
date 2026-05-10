@@ -4,7 +4,7 @@ import CakePlaceholder from '../components/CakePlaceholder.jsx'
 import PageTransition from '../components/PageTransition.jsx'
 
 const milestones = [
-  { year: '2017', title: 'A small dream begins', text: 'Founded as a 2-table boutique bakery in Sector 12, Noida.' },
+  { year: '2021', title: 'A small dream begins', text: 'Founded as a 2-table boutique bakery in Sector 12, Noida.' },
   { year: '2019', title: 'First 1000 cakes', text: 'Crossed our first thousand celebration cakes; introduced eggless menu.' },
   { year: '2021', title: 'Designer & fusion', text: 'Launched our designer line — rasmalai cakes, photo prints, custom themes.' },
   { year: '2023', title: 'FSSAI gold standard', text: 'Awarded FSSAI compliance and Best Bakery (Noida) by local press.' },
@@ -32,7 +32,7 @@ export default function About() {
               Built on butter, sugar, and love.
             </h1>
             <p className="text-cream-100/80 text-lg leading-relaxed">
-              Noida's Cake House started in 2017 with a single oven, three trusted recipes,
+              Noida's Cake House started in 2021 with a single oven, three trusted recipes,
               and one idea — that every birthday, anniversary, and quiet Tuesday deserves a
               great slice. Eight years on, we're still small enough to know your name, and big
               enough to never miss a delivery.

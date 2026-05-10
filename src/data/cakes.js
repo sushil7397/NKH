@@ -1,10 +1,12 @@
+import { assetUrl } from '../utils/assets.js'
+
 // Catalog for Noida's Cake House.
 // Titles and descriptions come from the merchant's own menu (images.html).
 // Photos live in /public/images/cakes/ — edit any entry from /admin/cakes.
 
 export const CATEGORIES = ['All', 'Cakes', 'Jar Cakes', 'Bento Cakes']
 
-const IMG = '/images/cakes'
+const IMG = assetUrl('images/cakes')
 
 export const seedCakes = [
   // ─── CAKES ──────────────────────────────────────────────────────────────

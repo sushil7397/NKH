@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom'
 import { MapPin, Phone, Mail, Instagram, Facebook, Clock } from 'lucide-react'
+import { assetUrl } from '../utils/assets.js'
 
 export default function Footer() {
   return (
@@ -8,7 +9,7 @@ export default function Footer() {
         <div className="md:col-span-2">
           <div className="flex items-center gap-3 mb-4">
             <img
-              src="/logo.png"
+              src={assetUrl('logo.png')}
               alt="Noida's Cake House"
               className="w-14 h-14 object-contain shrink-0"
             />
@@ -45,7 +46,7 @@ export default function Footer() {
           </div>
           <div className="mt-6 flex items-center gap-4 rounded-2xl border border-cream/10 bg-cream/5 p-4">
             <div className="flex h-16 w-24 items-center justify-center rounded-xl bg-cream px-3 py-2">
-              <img src="/fssai.png" alt="FSSAI" className="max-h-full w-full object-contain" />
+              <img src={assetUrl('fssai.png')} alt="FSSAI" className="max-h-full w-full object-contain" />
             </div>
             <div>
               <p className="text-sm font-semibold text-gold">FSSAI</p>

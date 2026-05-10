@@ -29,7 +29,7 @@ Then open http://localhost:5173
 | Field    | Value             |
 |----------|-------------------|
 | Username | `admin`           |
-| Password | `cakehouse@2017`  |
+| Password | `cakehouse@2021`  |
 
 (Configured in `src/context/AuthContext.jsx`. Replace with Supabase / Firebase Auth in production.)
 

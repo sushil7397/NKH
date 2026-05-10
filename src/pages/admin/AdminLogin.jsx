@@ -2,6 +2,7 @@ import { useState } from 'react'
 import { useNavigate, useLocation, Link } from 'react-router-dom'
 import { Lock, AlertTriangle } from 'lucide-react'
 import { useAuth } from '../../context/AuthContext.jsx'
+import { assetUrl } from '../../utils/assets.js'
 
 export default function AdminLogin() {
   const { login, isAuthenticated, demoCredentials } = useAuth()
@@ -31,7 +32,7 @@ export default function AdminLogin() {
         <div className="relative h-full flex flex-col justify-between p-10">
           <Link to="/" className="flex items-center gap-3">
             <img
-              src="/logo.png"
+              src={assetUrl('logo.png')}
               alt="Noida's Cake House"
               className="w-14 h-14 object-contain"
             />
@@ -58,7 +59,7 @@ export default function AdminLogin() {
       <div className="flex items-center justify-center p-6">
         <form onSubmit={submit} className="w-full max-w-sm card p-8">
           <div className="flex flex-col items-center text-center mb-6 md:hidden">
-            <img src="/logo.png" alt="Noida's Cake House" className="w-20 h-20 object-contain mb-2" />
+            <img src={assetUrl('logo.png')} alt="Noida's Cake House" className="w-20 h-20 object-contain mb-2" />
           </div>
           <div className="flex items-center gap-2 mb-6">
             <div className="w-10 h-10 rounded-full bg-chocolate text-gold flex items-center justify-center">
