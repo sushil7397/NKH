@@ -7,3 +7,14 @@ dist-ssr
 *.log
 .vscode
 .idea
+
+# Lockfiles are intentionally NOT tracked.
+# The Sandbox/CI environment for this repo has repeatedly produced lockfiles
+# with version pins that do not exist on the public npm registry
+# (tailwindcss@3.4.59, postcss-js@4.5.0, debug@4.5.0). CI deletes any lockfile
+# it finds and re-resolves from package.json, so committing a lockfile only
+# creates risk of breakage.
+package-lock.json
+npm-shrinkwrap.json
+yarn.lock
+pnpm-lock.yaml

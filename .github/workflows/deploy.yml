@@ -31,11 +31,19 @@ jobs:
           # stale/broken version pins in the past. We let npm resolve fresh
           # from package.json each run.
 
+      - name: Remove any committed lockfile
+        # The committed package-lock.json has repeatedly been written with
+        # version pins that do not exist on the public npm registry
+        # (e.g. tailwindcss@3.4.59, postcss-js@4.5.0, debug@4.5.0). We delete
+        # it here so npm resolves every dependency fresh from package.json
+        # against the public registry. This makes CI fully independent of
+        # whatever lockfile happens to be in the repo.
+        run: rm -f package-lock.json npm-shrinkwrap.json yarn.lock pnpm-lock.yaml
+
       - name: Install dependencies
-        # Using `npm install` (not `npm ci`) so the build doesn't fail when
-        # package-lock.json drifts from package.json. npm will update the
-        # lockfile in-place during install rather than abort.
-        run: npm install --no-audit --no-fund
+        # `npm install --no-package-lock` further guarantees npm will not read
+        # any lockfile during resolution and will not write one back either.
+        run: npm install --no-package-lock --no-audit --no-fund --registry=https://registry.npmjs.org/
 
       - name: Build site
         run: npm run build
