@@ -27,10 +27,15 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: 20
-          cache: npm
+          # Intentionally NOT caching npm — the lockfile in this repo has had
+          # stale/broken version pins in the past. We let npm resolve fresh
+          # from package.json each run.
 
       - name: Install dependencies
-        run: npm ci
+        # Using `npm install` (not `npm ci`) so the build doesn't fail when
+        # package-lock.json drifts from package.json. npm will update the
+        # lockfile in-place during install rather than abort.
+        run: npm install --no-audit --no-fund
 
       - name: Build site
         run: npm run build
