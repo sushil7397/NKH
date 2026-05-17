@@ -18,14 +18,14 @@ export default function Header() {
       <div className="section flex items-center justify-between h-16 md:h-20">
         <Link to="/" className="flex items-center gap-3 group">
           <img
-            src={assetUrl('logo.png')}
+            src={assetUrl('new logo.png')}
             alt="Noida's Cake House"
             className="w-12 h-12 md:w-14 md:h-14 object-contain group-hover:rotate-6 transition-transform"
           />
           <div className="leading-tight hidden sm:block">
             <p className="font-display text-lg md:text-xl text-chocolate">Noida's Cake House</p>
             <p className="text-[10px] uppercase tracking-[0.2em] text-chocolate-400">
-              Made With Love · Since 2021
+              Sweetening Your Day · Since 2021
             </p>
           </div>
         </Link>

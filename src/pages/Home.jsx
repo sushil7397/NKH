@@ -32,7 +32,7 @@ export default function Home() {
           <div className="absolute inset-0 opacity-30 bg-[radial-gradient(ellipse_at_top_right,_rgba(212,175,55,0.6)_0%,_transparent_50%)]" />
         </div>
 
-        <div className="section py-20 md:py-28 grid md:grid-cols-2 gap-12 items-center">
+        <div className="section pt-8 pb-20 md:pt-8 md:pb-28 grid md:grid-cols-2 gap-12 items-center">
           <motion.div
             initial={{ opacity: 0, x: -30 }}
             animate={{ opacity: 1, x: 0 }}
@@ -76,18 +76,18 @@ export default function Home() {
             initial={{ opacity: 0, scale: 0.9 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.7, delay: 0.2 }}
-            className="relative aspect-square max-w-md mx-auto w-full"
+            className="relative aspect-square max-w-xl lg:max-w-2xl mx-auto w-full"
           >
-            <div className="absolute -inset-6 rounded-full bg-gold/20 blur-3xl" />
+            <div className="absolute -inset-10 rounded-full bg-gold/25 blur-3xl" />
             <motion.div
               animate={{ rotate: [0, 2, -2, 0] }}
               transition={{ duration: 8, repeat: Infinity, ease: 'easeInOut' }}
               className="relative w-full h-full flex items-center justify-center"
             >
               <img
-                src={assetUrl('logo.png')}
+                src={assetUrl('new logo.png')}
                 alt="Noida's Cake House logo"
-                className="w-[80%] h-[80%] object-contain drop-shadow-2xl"
+                className="w-full h-full object-contain drop-shadow-2xl"
               />
             </motion.div>
             <motion.div
@@ -97,7 +97,7 @@ export default function Home() {
             >
               <div className="flex items-center gap-2 text-gold">
                 <Heart className="w-5 h-5" />
-                <p className="text-xs font-semibold uppercase tracking-wider">Made With Love</p>
+                <p className="text-xs font-semibold uppercase tracking-wider">Sweetening Your Day</p>
               </div>
               <p className="text-sm text-chocolate mt-1">Freshly baked cakes for every celebration.</p>
             </motion.div>

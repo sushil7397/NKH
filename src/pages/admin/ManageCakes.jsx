@@ -126,7 +126,7 @@ export default function ManageCakes() {
                         {cake.category}
                       </span>
                     </td>
-                    <td className="px-5 py-3 font-display text-base">₹{cake.price}</td>
+                    <td className="px-5 py-3 font-lexend font-semibold text-base tracking-tight">₹{cake.price}</td>
                     <td className="px-5 py-3 text-xs text-chocolate-400">
                       {cake.weights.map((w) => w.size).join(', ')}
                     </td>

@@ -11,7 +11,9 @@ import {
 import { useData } from '../context/DataContext.jsx'
 import PageTransition from '../components/PageTransition.jsx'
 
-const WHATSAPP_NUMBER = '919999999999'
+// WhatsApp wa.me URLs require a digit-only number (no +, no spaces, no dashes).
+// Country code (91) + 10-digit mobile, concatenated.
+const WHATSAPP_NUMBER = '918850198961'
 const PHONE_NUMBER = '+91 88501 98961'
 
 const CAKE_TYPES = [

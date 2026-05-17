@@ -9,14 +9,14 @@ export default function Footer() {
         <div className="md:col-span-2">
           <div className="flex items-center gap-3 mb-4">
             <img
-              src={assetUrl('logo.png')}
+              src={assetUrl('new logo.png')}
               alt="Noida's Cake House"
               className="w-14 h-14 object-contain shrink-0"
             />
             <div>
               <p className="font-display text-xl">Noida's Cake House</p>
               <p className="text-[10px] uppercase tracking-[0.2em] text-gold/80 mt-0.5">
-                Made With Love
+                Sweetening Your Day
               </p>
             </div>
           </div>
@@ -64,7 +64,7 @@ export default function Footer() {
             </li>
             <li className="flex items-center gap-2">
               <Phone className="w-4 h-4 text-gold" />
-              <a href="tel:+919999999999" className="hover:text-gold">
+              <a href="tel:+91 88501 98961" className="hover:text-gold">
                 +91 88501 98961
               </a>
             </li>

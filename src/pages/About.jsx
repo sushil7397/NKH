@@ -1,6 +1,6 @@
 import { motion } from 'framer-motion'
 import { Heart, Award, Cake, Users } from 'lucide-react'
-import CakePlaceholder from '../components/CakePlaceholder.jsx'
+import { assetUrl } from '../utils/assets.js'
 import PageTransition from '../components/PageTransition.jsx'
 
 const milestones = [
@@ -42,9 +42,14 @@ export default function About() {
             initial={{ opacity: 0, scale: 0.92 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ delay: 0.2 }}
-            className="rounded-3xl overflow-hidden shadow-2xl"
+            className="rounded-3xl overflow-hidden shadow-2xl ring-1 ring-gold/30 aspect-square"
           >
-            <CakePlaceholder tint="#7E1416" accent="#FFFDD0" label="Our Story" className="aspect-[4/3]" />
+            <img
+              src={assetUrl('about_image.png')}
+              alt="Signature two-tier cake featuring Noida's Cake House logo, cupcake topper, and gold lettering"
+              className="w-full h-full object-cover"
+              loading="lazy"
+            />
           </motion.div>
         </div>
       </section>

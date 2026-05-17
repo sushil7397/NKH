@@ -35,7 +35,7 @@ export default function CakeCard({ cake, rating, index = 0 }) {
             <p className="text-[10px] uppercase tracking-widest text-chocolate-400 mb-1">
               {cake.category}
             </p>
-            <h3 className="font-display text-lg leading-tight">{cake.title}</h3>
+            <h3 className="font-lexend font-semibold text-lg leading-tight tracking-tight">{cake.title}</h3>
           </div>
           {typeof rating === 'number' && rating > 0 && (
             <div className="shrink-0 flex items-center gap-1 text-xs text-chocolate-500">
@@ -50,7 +50,7 @@ export default function CakeCard({ cake, rating, index = 0 }) {
         <div className="mt-auto flex items-center justify-between pt-2 border-t border-chocolate-50">
           <div>
             <p className="text-[10px] uppercase tracking-widest text-chocolate-400">Starts at</p>
-            <p className="font-display text-xl text-chocolate">₹{cake.price}</p>
+            <p className="font-lexend font-bold text-xl text-chocolate tracking-tight">₹{cake.price}</p>
           </div>
           <Link
             to={`/cake/${cake.id}`}

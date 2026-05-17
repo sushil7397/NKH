@@ -16,7 +16,8 @@ import Modal from '../components/Modal.jsx'
 import PageTransition from '../components/PageTransition.jsx'
 import VegMark from '../components/VegMark.jsx'
 
-const WHATSAPP_NUMBER = '919999999999' // replace with real number
+// WhatsApp wa.me URLs require a digit-only number (no +, no spaces, no dashes).
+const WHATSAPP_NUMBER = '918850198961'
 
 export default function CakeDetail() {
   const { id } = useParams()
@@ -87,7 +88,7 @@ export default function CakeDetail() {
                 <span className="chip bg-gold text-chocolate font-semibold">★ Bestseller</span>
               )}
             </div>
-            <h1 className="text-3xl md:text-4xl font-display mb-3">{cake.title}</h1>
+            <h1 className="text-3xl md:text-4xl font-lexend font-semibold tracking-tight mb-3">{cake.title}</h1>
 
             {avgRating > 0 && (
               <div className="flex items-center gap-2 mb-4 text-sm">
@@ -123,9 +124,9 @@ export default function CakeDetail() {
                         : 'border-chocolate-100 hover:border-chocolate-300'
                     }`}
                   >
-                    <span className="block">{w.size}</span>
+                    <span className="block font-lexend tracking-tight">{w.size}</span>
                     <span
-                      className={`block text-xs ${
+                      className={`block text-xs font-lexend font-semibold ${
                         activeWeight === i ? 'text-gold' : 'text-chocolate-400'
                       }`}
                     >
@@ -139,7 +140,7 @@ export default function CakeDetail() {
             <div className="flex items-end justify-between bg-cream-50 rounded-2xl p-5 mb-6">
               <div>
                 <p className="text-xs uppercase tracking-widest text-chocolate-400">Total</p>
-                <p className="font-display text-4xl text-chocolate">₹{selected.price}</p>
+                <p className="font-lexend font-bold text-4xl text-chocolate tracking-tight">₹{selected.price}</p>
                 <p className="text-xs text-chocolate-400 mt-1">incl. taxes · {selected.size}</p>
               </div>
               <div className="flex flex-col gap-2">

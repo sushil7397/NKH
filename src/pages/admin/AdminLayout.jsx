@@ -49,7 +49,7 @@ export default function AdminLayout() {
       >
         <div className="h-16 flex items-center justify-between px-5 border-b border-cream/10">
           <Link to="/admin" className="flex items-center gap-2">
-            <img src={assetUrl('logo.png')} alt="" className="w-9 h-9 object-contain" />
+            <img src={assetUrl('new logo.png')} alt="" className="w-9 h-9 object-contain" />
             <span className="font-display">Cake House</span>
           </Link>
           <button
